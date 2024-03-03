@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <style>
+    
+        body{
+            display: block;
+            background-color: aquamarine;
+        }
+        
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+            height: 12vh;
+            background-color: rgb(2, 57, 2);
+            color:white;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid black;
+        }
+        
+        .logo{
+            font-size: 2.5rem;
+            margin-left: 3%;
+        }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .middle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 2%;
+        }
+        
+        .p1{
+            font-size: 1.3rem;
+            border: none;
+            margin-left: 1%;
+            background-color: rgb(2, 57, 2);
+            color: white;
+            cursor: pointer;
+            font-family: "Salsa", cursive;
+        }
+
+        .p1:hover{
+            color:yellow;
+            transition: 0.7s;
+        }
+        
+        .text{
+            font-size: 1.2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width:800px;
+            margin-left: 15%;
+            margin-top: 2%;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">SYNDERGAMES</span>
+        <div class="middle">
+            <button class="p1" onclick="redirectToHome()">Home</button>
+            <button class="p1" onclick="redirectToAbout()">About</button>
+            <button class="p1" onclick="redirectToGames()">Games</button>
+            <button class="p1" onclick="redirectToAuthor()">Author</button>
+        </div>
+    </div>
+    <h1><center>The Motivation</center></h1>
+    <div class="text">
+
+        Our inspiration stems from a passion for continuous learning and growth in the ever-evolving field of web development.
+
+        Within this website, you'll find a collection of three engaging games meticulously crafted to entertain and challenge users while simultaneously providing valuable opportunities for skill development. Our games include the timeless classics 
+        such as Tic Tac Toe, Hangman, and Rock Paper Scissors, each designed with intuitive interfaces and interactive features to ensure an enjoyable experience for players of all levels.
+        <br><br>
+        Our mission is to create an environment where Prabhav and other aspiring web developers can immerse themselves in practical application, honing their coding abilities while having fun and enjoying the thrill of gaming.
+         Whether you're a novice eager to explore the basics or a seasoned developer looking to refine your techniques, our platform offers something for everyone.
+         <br><br>
+        Join us on this journey of discovery and mastery as we strive to empower Prabhav and fellow enthusiasts in their quest for excellence in web development.
+         Together, let's embark on a rewarding adventure filled with learning, creativity, and endless possibilities.
+    </div>
+    <script>
+        function redirectToHome() {
+            window.location.href = "/home";
+        }
+        function redirectToAbout() {
+            window.location.href = "/about";
+        }
+        function redirectToGames() {
+            window.location.href = "/games";
+        }
+        function redirectToAuthor() {
+            window.location.href = "/author";
+        }
+    </script>
+</body>
+</html>

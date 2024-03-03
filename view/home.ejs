@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <style>
+    
+        body{
+            display: block;
+            background-color: aquamarine;
+        }
+        
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+            height: 12vh;
+            background-color: rgb(2, 57, 2);
+            color:white;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid black;
+        }
+
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .logo{
+            font-size: 2.5rem;
+            margin-left: 3%;
+        }
+        
+        .middle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 2%;
+        }
+        
+        .p1{
+            font-size: 1.3rem;
+            border: none;
+            margin-left: 1%;
+            background-color: rgb(2, 57, 2);
+            color: white;
+            cursor: pointer;
+            font-family: "Salsa", cursive;
+        }
+
+        .p1:hover{
+            color:yellow;
+            transition: 0.7s;
+        }
+
+        .text{
+            font-size: 1.2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width:800px;
+            margin-left: 15%;
+            margin-top: 1%;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .button-contain{
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+        }
+        .b3{
+    margin-top: 20px;
+    margin-left: 6%;
+    padding: 3px;
+    width:40%;
+    height: 8vh;
+    background-color: crimson;
+    border-radius: 20px;
+    color:white;
+    font-size: 1.3rem;
+    font-family: "Salsa", cursive;
+}
+
+.b3:hover{
+    background-color: rgb(158, 13, 13);
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.7s;
+    opacity: 0.7;
+}
+
+        #b31{
+            background-color:red;
+        }
+        #b32{
+            background-color:green;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">SYNDERGAMES</span>
+        <div class="middle">
+            <button class="p1" onclick="redirectToHome()">Home</button>
+            <button class="p1" onclick="redirectToAbout()">About</button>
+            <button class="p1" onclick="redirectToGames()">Games</button>
+            <button class="p1" onclick="redirectToAuthor()">Author</button>
+        </div>
+    </div>
+    <center><h1>Home</h1></center>
+    <div class="text">
+        Welcome to SYNDERGAMES! Here, we're excited to introduce you to an immersive gaming experience featuring three captivating games: Tic Tac Toe, Hangman, and Rock Paper Scissors. <br>
+        <br><br>
+        Each game has been meticulously crafted using JavaScript, providing an engaging and interactive environment for players of all ages.<br>
+        <br><br>
+        Each of these games showcases the versatility and power of JavaScript in game development.<br>
+        From strategic thinking to linguistic prowess to quick reflexes, our games offer something for every player to enjoy and master.<br>
+        So come, dive into the world of gaming excellence, and let JavaScript power your journey to victory!<br>
+    </div>
+    <div class="button-contain">
+        <button class="b3" onclick="redirectToGames()" id="b31">Start Playing!</button>
+        <button class="b3" onclick="redirectToAbout()" id="b32">Know More!</button>
+    </div>
+    <script>
+        function redirectToHome() {
+            window.location.href = "/home";
+        }
+        function redirectToAbout() {
+            window.location.href = "/about";
+        }
+        function redirectToGames() {
+            window.location.href = "/games";
+        }
+        function redirectToAuthor() {
+            window.location.href = "/author";
+        }
+    </script>
+</body>
+</html>

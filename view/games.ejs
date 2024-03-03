@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <style>
+    
+        body{
+            display: block;
+            background-color: aquamarine;
+        }
+        
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+            height: 12vh;
+            background-color: rgb(2, 57, 2);
+            color:white;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid black;
+        }
+        
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .logo{
+            font-size: 2.5rem;
+            margin-left: 3%;
+        }
+        
+        .middle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 2%;
+        }
+        
+        .p1{
+            font-size: 1.3rem;
+            border: none;
+            margin-left: 1%;
+            background-color: rgb(2, 57, 2);
+            color: white;
+            cursor: pointer;
+            font-family: "Salsa", cursive;
+        }
+
+        .p1:hover{
+            color:yellow;
+            transition: 0.7s;
+        }
+        
+        .button-contain{
+            width:80%;
+            height: 70vh;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            margin-top: 20px;
+        }
+
+        .card{
+            display: block;
+            width:24.3%;
+            height: 80%;
+        }
+        .b2{
+            border:none;
+            width:100%;
+            height: 60%;
+            font-size: 2.3rem;
+            font-family: "Salsa", cursive;
+        }
+
+        .start{
+    margin-top: 20px;
+    padding: 3px;
+    width:100%;
+    background-color: crimson;
+    border-radius: 20px;
+    color:white;
+    font-size: 1.3rem;
+    font-family: "Salsa", cursive;
+}
+
+.start:hover{
+    background-color: rgb(158, 13, 13);
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.7s;
+    opacity: 0.7;
+}
+        #s1{
+            background-color: bisque;
+        }
+
+        #s2{
+            background-color: rgb(135, 199, 25);
+        }
+        #s3{
+            background-color: rgb(255, 248, 124);
+        }
+        </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">SYNDERGAMES</span>
+        <div class="middle">
+            <button class="p1" onclick="redirectToHome()">Home</button>
+            <button class="p1" onclick="redirectToAbout()">About</button>
+            <button class="p1" onclick="redirectToGames()">Games</button>
+            <button class="p1" onclick="redirectToAuthor()">Author</button>
+        </div>
+    </div>
+    <h1><center>Games</center></h1>
+    <div class="button-contain">
+        <div class="card">
+        <button class="b2" onclick="redirectToTTT()" id="s1">TIC-TAC-TOE</button>
+        <form action="/play-tic-tac-toe" method="GET">
+            <button class="start">START</button>
+        </form>
+        </div>
+        <div class="card">
+        <button class="b2" onclick="redirectToHang()" id="s2">HANGMAN</button>
+        <form action="/game_hang" method="GET">
+            <button class="start">START</button>
+        </form>
+        </div>
+        <div class="card">
+        <button class="b2" onclick="redirectToRPS()" id="s3">ROCK PAPERS SCISSORS</button>
+        <form action="/rps_game" method="GET">
+            <button class="start">START</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        function redirectToHome() {
+            window.location.href = "/home";
+        }
+        function redirectToAbout() {
+            window.location.href = "/about";
+        }
+        function redirectToGames() {
+            window.location.href = "/games";
+        }
+        function redirectToAuthor() {
+            window.location.href = "/author";
+        }
+        function redirectToTTT() {
+            window.location.href = "/tic_tac_toe";
+        }
+    </script>
+</body>
+</html>
