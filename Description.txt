@@ -1,0 +1,22 @@
+This is a very important Note.
+
+You need to install certain Node Modules from NPM.
+
+So follow these commands before writing your code
+
+1. npm i mongoose
+2. npm i express
+3. npm i bcrypt
+4. npm i ejs
+
+After running these commands , make sure your dependancies appear like this ( based on your current version) in the package JSON file:
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.0"
+  }
+}
+
+
